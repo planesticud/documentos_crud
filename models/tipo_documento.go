@@ -19,6 +19,7 @@ type TipoDocumento struct {
 	Tamano            float64 `orm:"column(tamano);null"`
 	Extension         string  `orm:"column(extension);null"`
 	Workspace         string  `orm:"column(workspace)"`
+	TipoDocumentoNuxeo         string  `orm:"column(tipo_documento_nuxeo)"`
 }
 
 func (t *TipoDocumento) TableName() string {
